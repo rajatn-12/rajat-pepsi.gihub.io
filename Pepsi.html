@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Pepsi Website Landing Page</title>
+     <link rel="stylesheet" href="Pepsi1.css">
+</head>
+<body>
+    <div class="pep">
+        <header>
+         <a href="#"><img src="Pepsi/logo.png" class="logo"></a>
+         <ul>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>About</a></li>
+            <li><a href='#'>Services</a></li>
+            <li><a href='#'>Contacts</a></li>
+            <li><a href='#'>Partnerships</a></li>
+         </ul>
+        </header>
+      <section class="content">
+         <section class="textBox">
+            <h2>That's What<br><span>I Like</span></h2>
+            <p>Pepsi has introduced the new tagline “That’s What I Like” for its Pepsi, Pepsi Zero Sugar, and Diet Pepsi beverages across the United States.<br> The tagline will remain indefinitely according to the company and marks the first permanent tagline tweak for the brand in over two decades. </p>
+              <a href="#">View All Products</a>
+            </section>
+            <section class="imgBox">
+               <img src="pepsi001.png" class="pepsi12">
+         </section>
+        </section>
+        <ul class="thumb">
+          <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be')"></li>
+          <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c')"></li>
+          <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e')"></li>
+        </ul>
+     </div>
+     <script type="text/javascript">
+       function imgSlider(anything){
+         document.querySelector('.pepsi12').src= anything;
+     }
+       function changeBgColor(color){
+         const sec=document.querySelector('.pep');
+         sec.style.background=color;
+}
+ </script>
+</body>
+</html>
